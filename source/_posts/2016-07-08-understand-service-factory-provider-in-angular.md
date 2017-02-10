@@ -2,8 +2,8 @@
 layout: post
 title:  理解angular中的service、factory、provider
 date:   2016-07-08 
-categories: 
-- angular
+categories: angular
+tags: angular
 ---
 
 > angular的依赖注入特性确实很强大，其核心就是$injector，他注入的所有服务，底层都是通过provider来提供的。而所谓的Service、Factory、Value、Constant只是provider封装出来的API方法而已，这些方法又大都暴露给angular.module，所以才会出现我们常见的module.service等方法。

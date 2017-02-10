@@ -3,6 +3,7 @@ layout: post
 title:  "初识webpack"
 date:   2016-10-22
 categories: webpack
+tags: webpack
 ---
 
 ![webpack](/images/webpack.png)

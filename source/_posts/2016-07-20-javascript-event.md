@@ -3,6 +3,7 @@ layout: post
 title:  "JavaScript中的事件机制"
 date:   2016-07-20
 categories: javascript
+tags: javascript
 ---
 
 ## 1. 事件发展的历史

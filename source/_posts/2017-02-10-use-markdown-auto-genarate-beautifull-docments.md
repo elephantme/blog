@@ -2,7 +2,6 @@
 layout: post
 title:  使用markdown自动生成Restfull风格的文档
 date:   2017-02-10
-categories: others
 ---
 
 ## 1. markdown
@@ -26,7 +25,6 @@ categories: others
 ### 3.1 Python & pip
 
 pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。
-
 安装都比较简单，windows下需要配置环境变量。
 
 ### 3.2 mkdocs

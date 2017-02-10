@@ -3,6 +3,7 @@ layout: post
 title:  "使用vue+vue-route+webpack构建单页面应用"
 date:   2016-08-01
 categories: vue
+tags: [vue, webpack]
 ---
 
 vue-route是vue官方的一个插件，看了文档之后，觉得他设计得相当棒，提供了一些钩子方法，可以方便的实现各种业务。我会单独写一篇文章来谈谈。

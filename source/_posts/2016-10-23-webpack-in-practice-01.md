@@ -3,6 +3,7 @@ layout: post
 title:  "webpack实战"
 date:   2016-10-23
 categories: webpack
+tags: webpack
 ---
 
 > 本次示例主要讲解了代码分割、文件hash及commonschunk插件的使用。

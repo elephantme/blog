@@ -2,7 +2,8 @@
 layout: post
 title:  "angular+webpack+oclazyload实现代码分割"
 date:   2016-08-03
-categories: angular, webpack
+categories: webpack
+tags: [angular, webpack]
 ---
 
 ## 1. 为什么要代码分割

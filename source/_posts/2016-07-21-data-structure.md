@@ -3,6 +3,7 @@ layout: post
 title:  "数据结构"
 date:   2016-07-21
 categories: data_structure
+tags: data_structure
 ---
 
 介绍常见的数据结构，如集合、散列表、队列、栈、链表等，并用js来实现。

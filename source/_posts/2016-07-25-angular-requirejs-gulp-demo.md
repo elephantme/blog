@@ -3,6 +3,7 @@ layout: post
 title:  "使用Angular、RequireJs、Gulp构建单页面应用"
 date:   2016-07-25 
 categories: angular
+tags: [angular, gulp]
 ---
 
 ## 1. 项目结构 

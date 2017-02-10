@@ -3,6 +3,7 @@ layout: post
 title:  "掌握vue中的组件"
 date:   2016-07-31
 categories: vue
+tags: vue
 ---
 
 定义组件的主要目的就是为了代码复用。在实际中，组件之间存在嵌套关系，难点就是弄清楚他们之间是怎么通信的。

@@ -4,7 +4,7 @@
 
 # Site
 title: Dong's Blog
-subtitle:
+subtitle: 路漫漫其修远兮，吾将上下而求索
 description:
 author: Dong
 language: zh-Hans
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://elephantme.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -71,4 +71,7 @@ deploy:
   type: git
   repo: git@github.com:elephantme/elephantme.github.io.git
   branch: master
+
+baidu_analytics: 1a71164e95b5296508c0d1492855a5a0
+
 

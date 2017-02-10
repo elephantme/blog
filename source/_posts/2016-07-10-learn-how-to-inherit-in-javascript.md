@@ -3,6 +3,7 @@ layout: post
 title:  "探索Javascript中的继承"
 date:   2016-07-10
 categories: javascript
+tags: javascript
 ---
 
 ## 1. 原型链

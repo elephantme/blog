@@ -3,6 +3,7 @@ layout: post
 title:  "svg坐标系统及基本图形介绍"
 date:   2016-12-7
 categories: svg
+tags: svg
 ---
 
 ## 1. 坐标系统
@@ -32,24 +33,24 @@ categories: svg
 
 ### 1.3 宽高比
 
-> viewBox的宽高比与viewPort的宽高比不一致时，svg有三种处理方式：
-> 1. 按较小尺寸等比例缩放图形，以使图形完全填充视口。
-> 2. 按较大尺寸等比例缩放图形并裁剪掉超出视口的部分。
-> 3. 拉伸和挤压绘图以使其恰好填充新的视口(完全不保留宽高比)。
->
-> 第一种情况会出现某一个方向要比视口小，需要解决放置在哪里，就是对齐的问题。
-> 第二种情况会出现某一个方向要比视口大，需要解决哪个区域被裁剪掉，如左侧、右侧还是两侧。
+viewBox的宽高比与viewPort的宽高比不一致时，svg有三种处理方式：
+1. 按较小尺寸等比例缩放图形，以使图形完全填充视口。
+2. 按较大尺寸等比例缩放图形并裁剪掉超出视口的部分。
+3. 拉伸和挤压绘图以使其恰好填充新的视口(完全不保留宽高比)。
+
+第一种情况会出现某一个方向要比视口小，需要解决放置在哪里，就是对齐的问题。
+第二种情况会出现某一个方向要比视口大，需要解决哪个区域被裁剪掉，如左侧、右侧还是两侧。
 
 **preserveAspectRatio指定对齐方式**
 
-> preserveAspectRatio="alignment [meet | slice]" 
-> 其中alignment指定轴位置，由xMin、xMid、xMax与yMin、yMid、yMax组合而成，默认为xMidYMid meet。
-> meet为第一种情况，slice为第二种情况，要进行裁剪。
-> preserveAspectRatio="none" 为第三种情况。
+preserveAspectRatio="alignment [meet | slice]" 
+其中alignment指定轴位置，由xMin、xMid、xMax与yMin、yMid、yMax组合而成，默认为xMidYMid meet。
+meet为第一种情况，slice为第二种情况，要进行裁剪。
+preserveAspectRatio="none" 为第三种情况。
 
 ### 1.4 嵌套坐标系统
 
-> 可以在任何时候将另一个svg元素插入到文档中来建立新的视口和坐标系统。其效果相当于一个迷你画布。
+可以在任何时候将另一个svg元素插入到文档中来建立新的视口和坐标系统。其效果相当于一个迷你画布。
 
 ## 2. 基本形状
 

@@ -3,6 +3,7 @@ layout: post
 title:  "理解vue与angular双向绑定的本质"
 date:   2016-07-31
 categories: vue
+tags: [vue, angular]
 ---
 
 Vue.js的数据观测实现原理和Angular有着本质的不同。了解Angular的读者可能知道，Angular的数据观测采用的是脏检查（dirty checking）机制。每一个指令都会有一个对应的用来观测数据的对象，叫做watcher；一个作用域中会有很多个watcher。每当界面需要更新时，Angular会遍历当前作用域里的所有watcher，对它们一一求值，然后和之前保存的旧值进行比较。如果求值的结果变化了，就触发对应的更新，这个过程叫做digest cycle。脏检查有两个问题：

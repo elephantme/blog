@@ -2,7 +2,8 @@
 layout: post
 title:  "使用vue、webpack实现简单todolist"
 date:   2016-07-30 
-categories: vue, webpack
+categories: vue
+tags: [vue, webpack]
 ---
 
 如果你熟悉Angular，会发现上手vue很容易。确实这两者中的一些概念很类似，如双向绑定、过滤器、事件、条件控制、表达式等。
