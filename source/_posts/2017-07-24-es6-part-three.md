@@ -1,9 +1,13 @@
 ---
-title: es6-part-three
-date: 2017-07-24 23:21:18
+title: 深入理解ES6-Set和Map集合
+date: 2017-07-27 09:16:00
 tags:
 categories:
 ---
+
+> 主要介绍Set和Map的使用方式及API介绍，还着重介绍了Weak Set和Weak Map及其使用场景。
+
+<!-- More -->
 
 # Set集合与Map集合
 
@@ -160,5 +164,93 @@ console.log(set.has(key));      // false
 * Weak Set集合不支持size属性。
 
 Weak Set集合的功能看似受限，其实这是为了让它能够正确地处理内存中的数据。总之，如果你只需要跟踪对象引用，你更应该使用Weak Set集合而不是普通的Set集合。
+
+## ES6中的Map集合
+
+### Map集合支持的方法
+
+* set()            向集合中添加元素
+* get(key)         获取集合中元素
+* has(key)         检测是否存在指定的键名
+* delete(key)      移除指定的键名
+* clear()          清除集合中所有的键值对
+
+### Map集合的初始化方法
+
+可以向Map 构造函数传入数组来初始化一个Map集合，这一点同样与Set 集合相似。数据中的每个元素都是一个子数组，子数组中包含一个键值对的键名与值两个元素。因此，整个Map集合中包含的全是这样的两元素数组。
+
+```javascript
+let map = new Map(["name", "zhangsan"], ["age", 25]);
+
+console.log(map.has("name"));     // true
+console.log(map.has("age"));      // true
+console.log(map.size);            // 2
+```
+
+### Map集合的forEach()方法
+
+```javascript
+let map = new Map(["name", "zhangsan"], ["age", 25]);
+
+map.forEach(function(value, key, ownerMap){
+  console.log(key + " " + value);
+  console.log(ownerMap === map);
+});
+```
+
+### Weak Map集合
+
+Weak Set是弱引用Set集合，相对的，Weak Map是弱引用Map集合，也用于存储对象的弱引用。Weak Map集合中的键名必须是一个对象，如果使用非对象键名会报错；集合中保存的是这些对象的弱引用，如果在弱引用之外不存在其他的强引用，引擎的垃圾回收机制会自动回收这个对象，同时也会移除Weak Map集合中的键值对。
+
+Weak Map集合最大的用途是保存Web页面中的Dom元素。
+
+### Weak Map集合支持的方法
+
+它只支持两个可以操作键值对的方法：has()方法和delete()方法。Weak Map集合与Weak Set集合一样，二者都不支持键名枚举，从而也不支持clear()方法。
+
+### 私有数据（Weak Map实战）
+
+一般我们会这么写：
+
+```javascript
+var Person = (function(){
+  var privateData = {},
+    privateId = 0;
+
+  function Person(name) {
+    Object.defineProperty(this, "_id", {value: privateId++ });
+
+    privateData[this._id] = {
+      name: name
+    };
+  }
+
+  Person.prototype.getName = function() {
+    return privateData[this._id].name;
+  }
+
+  return Person;
+})();
+```
+
+这种方法最大的问题是，如果不主动管理，由于无法获知对象实例何时被销毁，因此privateData中的数据就永远不会消失。而使用Weak Map集合就可以解决这个问题：
+
+```javascript
+var Person = (function(){
+  var privateData = new WeakMap();
+
+  function Person(name) {
+    privateData.set(this, {name: name});
+  }
+
+  Person.prototype.getName = function() {
+    return privateData.get(this).name;
+  }
+
+  return Person;
+})();
+```
+
+使用Weak Map改造后，当实例销毁Map中的键值对也会相应的移除，可以及时垃圾回收，避免内存浪费。
 
 
