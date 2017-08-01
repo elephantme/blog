@@ -1,8 +1,9 @@
 ---
 title: 深入理解ES6-Set和Map集合
 date: 2017-07-27 09:16:00
-tags:
-categories:
+tags: ES6
+categories: ES6
+keywords: ES6, 深入理解ES6
 ---
 
 > 主要介绍Set和Map的使用方式及API介绍，还着重介绍了Weak Set和Weak Map及其使用场景。

@@ -1,8 +1,8 @@
 ---
 title: ES6之生成器(Generator)
 date: 2017-07-11 23:09:32
-tags: ES6, Genarator
-keywords: Genarator, 生成器, ES6
+tags: ES6, Generator
+keywords: Generator, 生成器, ES6
 categories: ES6
 ---
 
