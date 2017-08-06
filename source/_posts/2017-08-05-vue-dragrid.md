@@ -7,6 +7,8 @@ categories:
 
 > 本文对[田老师](https://github.com/tm-roamer)写的[flowgrid](https://github.com/tm-roamer/flowgrid)插件做详细的讲解，为此特地写了一个小项目，暂且就叫[vue-dragrid](https://github.com/elephantme/vue-dragrid)，预览效果[点击这里](https://elephantme.github.io/vue-dragrid/)，下面会针对一个个commit来进行讲解，所有commit[请看这里](https://github.com/elephantme/vue-dragrid/commits/master)。
 
+<!-- More -->
+
 ## 准备工作
 
 1. 先clone项目到本地。
