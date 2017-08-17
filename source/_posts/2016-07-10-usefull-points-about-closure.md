@@ -2,8 +2,8 @@
 layout: post
 title:  "总结下闭包"
 date:   2016-07-10
-categories: javascript
-tags: javascript
+categories: 
+tags: 
 ---
 
 当在函数内部定义了其他函数时，就创建了闭包。闭包有权访问包含函数内部的所有变量，原理如下：

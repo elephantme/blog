@@ -1,8 +1,8 @@
 ---
 title: 使用JavaScript实现冒泡排序
 date: 2017-08-17 18:37:48
-tags:
-categories:
+tags: algorithm
+categories: algorithm
 ---
 
 ## 概念

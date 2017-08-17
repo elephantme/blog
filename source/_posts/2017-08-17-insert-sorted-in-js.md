@@ -1,8 +1,8 @@
 ---
 title: 使用JavaScript实现插入排序
 date: 2017-08-17 14:25:43
-tags: 
-categories: 
+tags: algorithm
+categories: algorithm
 ---
 
 ## 概念

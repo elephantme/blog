@@ -1,8 +1,8 @@
 ---
 title: 使用JavaScript实现选择排序
 date: 2017-08-17 17:00:03
-tags:
-categories:
+tags: algorithm
+categories: algorithm
 ---
 
 ## 概念

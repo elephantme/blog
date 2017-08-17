@@ -2,8 +2,8 @@
 layout: post
 title:  "介绍js全局对象的常量属性&方法"
 date:   2016-07-13
-categories: javascript
-tags: javascript
+categories: 
+tags: 
 ---
 
 ## 1. 常量属性
