@@ -13,7 +13,7 @@ categories: algorithm
 下面看例子：
 
 ### Step 1:初始化数组
-![JavaScript select sort](/images/BubbleSort_1.png)
+![JavaScript select sort](/images/BubbleSort_initial.png)
 
 ### Step 2:第一个与第二个比较
 ![JavaScript select sort](/images/BubbleSort_step1.png)

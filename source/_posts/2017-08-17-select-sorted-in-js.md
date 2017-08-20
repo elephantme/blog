@@ -16,50 +16,50 @@ categories: algorithm
 下面看一个例子
 
 ### Step 1: 初始化数组
-![JavaScript select sort](/images/select-sorted-1.png)
+![JavaScript select sort](/images/initialArray.png)
 
 ### Step 2:
 
 先假设第一个元素最小，将它和第二个元素进行比较。
 
-![JavaScript select sort](/images/select-sorted-2.png)
+![JavaScript select sort](/images/Pass1-Step1.png)
 
 因为2<3，所以2仍然是最小元素。
 
 ### Step 3:
-![JavaScript select sort](/images/select-sorted-3.png)
+![JavaScript select sort](/images/Pass1-Step2.png)
 
 将2和5进行比较，结果2仍然是最小元素。
 
 ### Step 4:
-![JavaScript select sort](/images/select-sorted-4.png)
+![JavaScript select sort](/images/Pass1-Step3.png)
 
 这次，2<1，所以最小元素会变为1，我们会记录其下标索引位置。
 
-![JavaScript select sort](/images/select-sorted-5.png)
+![JavaScript select sort](/images/Pass1-Step4.png)
 
 现在我们有最新的最小元素，我们会用它和余下的元素进行比较，目的是要找到最小的元素。
 
 ### Step 5:
-![JavaScript select sort](/images/select-sorted-6.png)
+![JavaScript select sort](/images/Pass1-Step5.png)
 
 因为1<4，所以在这次循环中1是最小的元素，接下来像下面那样进行换位：
 
-![JavaScript select sort](/images/select-sorted-7.png)
+![JavaScript select sort](/images/Pass1-Complete.png)
 
 经过这次循环，我们找到了第一个位置的最小元素。接着会找余下元素的最小元素，将它和第二个位置上的元素进行交换。这次我们假设第二个元素是最小元素，重复上面的1到5步。经过第二轮循环，数组如下：
 
 ### 第二轮
-![JavaScript select sort](/images/select-sorted-8.png)
+![JavaScript select sort](/images/Pass2-Complete.png)
 
 ### 第三轮
-![JavaScript select sort](/images/select-sorted-11.png)
+![JavaScript select sort](/images/Pass3-Complete.png)
 
 ### 第四轮
-![JavaScript select sort](/images/select-sorted-9.png)
+![JavaScript select sort](/images/Pass4-Complete.png)
 
 ### 第五轮
-![JavaScript select sort](/images/select-sorted-10.png)
+![JavaScript select sort](/images/Pass5-Complete.png)
 
 ## JavaScript的实现
 
