@@ -1,6 +1,6 @@
 ---
 title: 使用JavaScript实现归并排序
-date: 2017-08-17 18:38:00
+date: 2017-08-18 18:38:00
 tags: algorithm
 categories: algorithm
 ---
@@ -47,4 +47,3 @@ function mergeSort(arr){
 
 在实际开发中，我们优先调用原生的`Array.prototype.sort()`方法来实现排序。浏览器底层会提供高效的排序实现，需要注意的是，并不是所有的实现都采用稳定排序，如果你对这个有要求，就需要自己来实现排序了。
 
-原文链接 [Computer science in JavaScript: Merge sort](https://www.nczonline.net/blog/2012/10/02/computer-science-and-javascript-merge-sort/)
